@@ -13,3 +13,7 @@ sayHi();
 2. <code>Lydia</code> and <code>Refference Error</code>
 3. <code>Refference Error</code> and <code>21</code>
 4. <code>Undefined</code> and <code>Refference Error</code>
+
+##Var 키워드
+
+## let 키워드
