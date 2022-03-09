@@ -10,3 +10,6 @@ let age = 21;
 sayHi();
 ```
 1. <code>Lydia</code> and <code>undefined</code>
+2. <code>Lydia</code> and <code>Refference Error</code>
+3. <code>Refference Error</code> and <code>21</code>
+4. <code>Undefined</code> and <code>Refference Error</code>
