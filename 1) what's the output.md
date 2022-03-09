@@ -9,4 +9,4 @@ let age = 21;
 
 sayHi();
 ```
-1.    Lydia and    undefined
+1.     Lydia and     undefined
