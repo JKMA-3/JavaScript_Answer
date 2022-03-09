@@ -1,5 +1,5 @@
 # 1. What is output
-
+```javascript
 function sayHi() {
 console.log(name);
 console.log(age);
@@ -8,3 +8,4 @@ let age = 21;
 }
 
 sayHi();
+```
