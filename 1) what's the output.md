@@ -9,4 +9,4 @@ let age = 21;
 
 sayHi();
 ```
-1. <dt>Lydia</dt> and <dt>undefined</dt>
+1. <code>Lydia</code> and <code>undefined</code>
