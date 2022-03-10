@@ -35,7 +35,18 @@ sayHi();
 <summary>함수 레벨 스코프</summary>
 <div markdown="1">
 
-함수 레벨 스코프란 변수 선언 시 함수만을 지역 스코프로 인정하기 때문에 함수 내부에서 선언된 변수만 지역변수 이며 함수 외부에서 선언된 변수는 전역 변수로 선언되는 방식
+함수 레벨 스코프란 var 변수 선언 및 함수 선언문으로 함수 선언 시 함수만을 지역 스코프로 인정하기 때문에 함수 내부에서 선언된 변수만 지역변수 이며 함수 외부에서 선언된 변수는 전역 변수로 선언되는 방식
+
+```javascript
+if (true) {
+  var color = `black`;
+}
+function foo() {
+  var color = `pink`;
+  console.log(color); //pink
+}
+console.log(color); //black
+```
 
 </div>
 </details>
@@ -46,13 +57,41 @@ sayHi();
 
 모든 코드블록(함수, if, for, try/catch)을 지역 스코프로 인정하여 코드 블록 내부에서 선언된 변수는 지역 변수로 외부에서는 참조가 불가능한 방식
 
+```javascript
+if (true) {
+  var color = `black`;
+  console.log(color); //black
+}
+function foo() {
+  var color = `pink`;
+  console.log(color); //pink
+}
+console.log(color); //Refference Error : color is not defined
+```
+
 </div>
 </details>
 
 # 클로저
 
-함수가 선언되었을 때의 정적 환경을 저장하여 외부에서 접근 가능한 함수
+함수가 선언 시 생성되는 정적 환경(변수 및 상위 스코프)을 저장하여 외부에서 접근 가능한 함수
+
+```javascript
+var color = "red";
+function foo() {
+  var color = "blue"; // 2
+  function bar() {
+    console.log(color); // 1
+  }
+  return bar;
+}
+var baz = foo(); // 3
+baz(); // 4
+```
+
+<code>bar()</code> 선언 시 outer에 foo의 Environment가 저장된다.
+baz() 호출 시 bar() 내에 'color'라는 변수가 없기 때문에 outer Environment에 저장되어 있는 foo의 정적환경에서 'color'를 찾아 출력한다.
 
 # 정적 환경(Lexical Environment)
 
-식별자와 상위 스코프에 대한 참조를 저장하는 자료구조
+실행 컨텍스트에서 식별자(함수, 변수)와 상위 스코프를 저장하는 자료구조로서 식별자를 관리하는 환경 레코드(Environment Record)와 상위 스코프를 저장하는 외부 렉시컬 환경에 대한 참조(Outer)로 구성되어 있다.
