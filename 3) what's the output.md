@@ -13,12 +13,16 @@ console.log(shape.diameter());
 console.log(shape.perimeter());
 ```
 
-1. <code>20</code> and <code>62.83185307179586</code>
+1. <code>code>20</ and <code>62.83185307179586</code>
 2. <code>20</code> and <code>NaN</code>
 3. <code>20</code> and <code>63</code>
 4. <code>NaN</code> and <code>63</code>
 
 # 요약
+
+두 메서드는 메서드 호출 방법으로 함수를 호출했으니 this는 메서드를 호출한 객체(shape)를 바인딩한다. 하지만 <code>perimeter()</code>는 화살표 함수이기 때문에 <code>perimeter()</code>의 this는 shpape가 아닌 전역 스코프(window)를 바인딩한다. 전역 스코프에는 radius라는 변수가 선언되지 않았으므로 this.radius = undefined가 된다.
+<code>diameter() {return 20}</code>
+<code>perimeter: () => 2 _ 3.14 _ undefined = NaN</code>
 
 # this키워드
 
@@ -110,4 +114,4 @@ const arrow = (a, a) => a + a; //Syntax Error
 
 this, argument, super, new.target 참조 시 스코프 체인으로 상위 스코프의 this, argument, super, new.target을 참조
 
->     화살표 함수는 함수 자체의 this바인딩이 없기 때문에 상위 this를 참조한는 lexical this
+>     화살표 함수는 함수 자체의 this바인딩이 없기 때문에 상위 this를 참조하는 lexical this 발생
