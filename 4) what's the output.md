@@ -47,3 +47,7 @@
 ## False인 값
 
 null, undefined, 0(number), ''(string), false, NaN
+
+```javascript
+var num;
+```
