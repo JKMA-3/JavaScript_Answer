@@ -34,7 +34,7 @@ var num = 1;
 const color = "black";
 ```
 
-<img src="https://user-images.githubusercontent.com/67920695/157781945-fb974201-70df-4f9c-b767-1993947dbf4a.png">
+<img src="https://user-images.githubusercontent.com/67920695/157782411-1c1188a1-9cde-4a03-8a76-0bb4c1257f1e.png">
 
 ### Var 키워드
 
