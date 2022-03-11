@@ -26,6 +26,8 @@ sayHi();
 변수 선언 시 선언문을 코드 상단으로 끌어올린 듯이 실행하여 런타임 이전에 변수가 선언되는 방식으로 값은 undefined로 고정
 
 ```javascript
+var num;
+const color;
 console.log(num); //var num = undefined
 console.log(color); //Refference Error
 var num = 1;
