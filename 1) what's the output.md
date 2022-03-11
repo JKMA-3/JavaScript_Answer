@@ -47,4 +47,4 @@ const color = "black";
 # 일시적 사각지대
 
 <code>let, const 키워드</code>로 변수 선언시 선언 단계, 초기화 단계 총 2가지 단계로 진행된다. 이 두가지 단계 사이를 일시적 사각지대라고 하며 이 때 변수 참조시 Refference Error가 발생한다.
-<img src="https://user-images.githubusercontent.com/67920695/157784038-90361150-cdac-48e0-9d40-9532e18be0dc.png"/>
+<img src="https://user-images.githubusercontent.com/67920695/157788015-b7dc0098-16c9-4cb2-a0cd-337384b9900f.png"/>
