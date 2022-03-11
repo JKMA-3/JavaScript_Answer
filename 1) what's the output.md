@@ -32,6 +32,8 @@ var num = 1;
 const color = "black";
 ```
 
+<img src="C:\Users\user\Desktop\개인자료\JavaScript_answer\JavaScript_Answer\img">
+
 ### Var 키워드
 
 변수 선언 시 <code>변수 호이스팅</code>으로 인하여 변수 선언문 이전에 참조가 가능하지만 값은 undefined로 고정
