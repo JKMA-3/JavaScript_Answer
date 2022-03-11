@@ -34,7 +34,7 @@ var num = 1;
 const color = "black";
 ```
 
-<img src="C:\Users\user\Desktop\개인자료\JavaScript_answer\JavaScript_Answer\img">
+<img src="https://user-images.githubusercontent.com/67920695/157781945-fb974201-70df-4f9c-b767-1993947dbf4a.png">
 
 ### Var 키워드
 
