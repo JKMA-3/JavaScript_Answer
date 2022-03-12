@@ -75,8 +75,12 @@ function foo() {
 foo();
 console.log(scope); //Uncaught ReferenceError: scope is not defined
 ```
-
-</div>
+    위의 코드 실행 시 let으로 선언한 변수는 블록 레벨 스코프이기 때문에 if(), function에 각각 지역변수가 생성된다.
+   ![Block내 var 변수 선언 = 전역변수 선언](https://user-images.githubusercontent.com/67920695/158004539-b74b35c1-b1c2-490b-a696-24362410361c.png)
+   ![Function 내 var 변수 선언 = 지역 변수 선언](https://user-images.githubusercontent.com/67920695/158004614-81c71736-c6e2-434b-8b1c-6b93040222fe.png)
+    따라서 코드실행 결과 if()문 에서 "Local(Block)"이 출력되며 function foo()내에서는 "Local(Function)"가 출력된다. 또한 전역에서는 선언된 변수가 없기 때문에 오류가 발생한다. 
+  ![let코드 실행 결과](https://user-images.githubusercontent.com/67920695/158021328-41dd8914-97dc-448a-a349-5f4816bf9183.png)
+</div>rk 
 </details>
 
 # 클로저
