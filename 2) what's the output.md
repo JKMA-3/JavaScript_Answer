@@ -89,20 +89,26 @@ console.log(scope); //Uncaught ReferenceError: scope is not defined
 함수가 선언 시 생성되는 정적 환경(변수 및 상위 스코프)을 저장하여 외부에서 접근 가능한 함수
 
 ```javascript
-var color = "red";
+const color = "red";
 function foo() {
-  var color = "blue"; // 2
+  const color = "blue"; 
   function bar() {
-    console.log(color); // 1
+    console.log(color); 
   }
   return bar;
 }
-var baz = foo(); // 3
-baz(); // 4
+var baz = foo(); 
+baz(); 
 ```
 
-<code>bar()</code> 선언 시 outer에 foo의 Environment가 저장된다.
-baz() 호출 시 bar() 내에 'color'라는 변수가 없기 때문에 outer Environment에 저장되어 있는 foo의 정적환경에서 'color'를 찾아 출력한다.
+Global Execution Context를 생성되며 foo()함수의 [[Environment]]내에 Global Lexical Environment가 저장된다.
+![1.Global Exe.Cont생성](https://user-images.githubusercontent.com/67920695/158022820-be5fb572-038a-4652-b147-7fc9a3caa25c.png)
+전역 스코프에 foo()가 정의되며 bar() 함수의 [[Environment]]내에 foo()의 Lexical Environment가 저장된다.
+![2.foo.Exe.Cont 생성](https://user-images.githubusercontent.com/67920695/158022822-3608d9c3-e483-45fa-baa3-fb7ea5c5e897.png)
+전역 변수 baz에 중첩함수인 bar()가 저장되며 foo()함수가 실행 컨텍스트에서 제거되지만 bar()의 [[Environment]]내에 저장된 Lexical Environment는 삭제되지 않는다.
+![3.변수내 저장](https://user-images.githubusercontent.com/67920695/158022825-e47f5927-8bc0-4cf6-9a7a-b1eac5fce772.png)
+baz() 호출 시 bar() 내에 'color'라는 변수가 없기 때문에 bar()의 [[Environment]]에 저장되어 있는 foo의 Lexical Environment에서 'color'를 찾아 출력한다
+![4.bar실행](https://user-images.githubusercontent.com/67920695/158022827-40924acb-0942-4d44-b45d-66926997148b.png)
 
 # 정적 환경(Lexical Environment)
 
