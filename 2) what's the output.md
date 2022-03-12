@@ -49,7 +49,7 @@ foo();
 console.log(scope); //Window
 ```
   <figure text-align="center">
-    <img src="https://user-images.githubusercontent.com/67920695/158004539-b74b35c1-b1c2-490b-a696-24362410361c.png"/>
+    <img src="https://user-images.githubusercontent.com/67920695/158004539-b74b35c1-b1c2-490b-a696-24362410361c.png" style="border:1px"/>
     <figcaption>Block 내 var 변수 션언 = 전역 변수 선언</figcaption>
     <br/><br/>
     <img src="https://user-images.githubusercontent.com/67920695/158004614-81c71736-c6e2-434b-8b1c-6b93040222fe.png"/>
