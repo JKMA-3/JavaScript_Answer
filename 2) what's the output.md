@@ -39,13 +39,14 @@ sayHi();
 
 ```javascript
 if (true) {
-  var color = `black`;
+  var scope = `Window`;
 }
 function foo() {
-  var color = `pink`;
-  console.log(color); //pink
+  var scope = `Local`;
+  console.log(scope); //Local
 }
-console.log(color); //black
+foo();
+console.log(scope); //Window
 ```
 
 </div>
@@ -59,14 +60,15 @@ console.log(color); //black
 
 ```javascript
 if (true) {
-  var color = `black`;
-  console.log(color); //black
+  let scope = `Local(Block)`;
+  console.log(scope); //Local(Block)
 }
 function foo() {
-  var color = `pink`;
-  console.log(color); //pink
+  let scope_2 = `Local(Function)`;
+  console.log(`scope_2`); //Local(Function)
 }
-console.log(color); //Refference Error : color is not defined
+foo();
+console.log(scope); //Uncaught ReferenceError: scope is not defined
 ```
 
 </div>
