@@ -48,7 +48,8 @@ function foo() {
 foo();
 console.log(scope); //Window
 ```
-
+<img src="https://user-images.githubusercontent.com/67920695/158004539-b74b35c1-b1c2-490b-a696-24362410361c.png">
+  
 </div>
 </details>
 <code>let, const</code>키워드는 <code>블록 레벨 스코프</code>
