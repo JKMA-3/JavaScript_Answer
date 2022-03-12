@@ -48,7 +48,12 @@ function foo() {
 foo();
 console.log(scope); //Window
 ```
-
+  위의 코드를 실행 하면 if문이라는 블록내에서 선언한 var변수는 전역 변수로 선언되며
+   ![Block내 var 변수 선언 = 전역변수 선언](https://user-images.githubusercontent.com/67920695/158004539-b74b35c1-b1c2-490b-a696-24362410361c.png)
+  foo()라는 함수내에서 선언한 변수는 지역변수가 되는 것을 확인할 수 있다.
+   ![Function 내 var 변수 선언 = 지역 변수 선언](https://user-images.githubusercontent.com/67920695/158004614-81c71736-c6e2-434b-8b1c-6b93040222fe.png)
+  ![코드 실행 결과](https://user-images.githubusercontent.com/67920695/158005117-f3a80499-76f9-4a6c-8662-d04a63b443d8.png)
+  코드실행결과
 </div>
 </details>
 <code>let, const</code>키워드는 <code>블록 레벨 스코프</code>
