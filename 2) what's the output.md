@@ -48,7 +48,7 @@ function foo() {
 foo();
 console.log(scope); //Window
 ```
-   ![Block내 var 변수 선언 = 전역변수 선언](https://user-images.githubusercontent.com/67920695/158004539-b74b35c1-b1c2-490b-a696-24362410361c.png
+   ![Block내 var 변수 선언 = 전역변수 선언](https://user-images.githubusercontent.com/67920695/158004539-b74b35c1-b1c2-490b-a696-24362410361c.png)
    ![Function 내 var 변수 선언 = 지역 변수 선언](https://user-images.githubusercontent.com/67920695/158004614-81c71736-c6e2-434b-8b1c-6b93040222fe.png)
   
 </div>
