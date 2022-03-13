@@ -111,5 +111,5 @@ baz() 호출 시 bar() 내에 'color'라는 변수가 없기 때문에 bar()의 
 ![4.bar실행](https://user-images.githubusercontent.com/67920695/158022827-40924acb-0942-4d44-b45d-66926997148b.png)
 
 # 정적 환경(Lexical Environment)
-
 실행 컨텍스트에서 식별자(함수, 변수)와 상위 스코프를 저장하는 자료구조로서 식별자를 관리하는 환경 레코드(Environment Record)와 상위 스코프를 저장하는 외부 렉시컬 환경에 대한 참조(Outer)로 구성되어 있다.
+환경 레코드 내에는 var키워드로 생성한 변수가 저장되어있는 Object Environment Record와 let,const키워드로 생성된 변수가 저장되는 declarative Environment Record로 구성되어 있다.
