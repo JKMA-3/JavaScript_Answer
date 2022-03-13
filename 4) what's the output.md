@@ -12,20 +12,15 @@
 # 요약
 
 # 연산자
-
-<details>
-<summary>비교 연산자</summary>
-<div markdown="1">
+## 비교연산자
 |이름|연산자|설명|
 |:---:|:---:|:---:|
 |동등|==|연산자가 같으면 True|
 |부등|!=|연산자가 다르면 True|
 |일치|===|연산자가 값과 타입이 모두 같은 경우 True|
 |불일치|!==|연산자의 값과 타입이 다른 경우 True|
-</div>
-</details>
 
-<details>
+
 <summary>산술 연산자</summary>
 <div markdown="2">
 
