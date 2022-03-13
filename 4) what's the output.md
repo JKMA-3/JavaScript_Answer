@@ -10,6 +10,7 @@
 3. <code>false</code> and <code>false</code>
 
 # 요약
+<code>1. 1and false</code>
 +는 단항 연산자로 피연산자가 숫자 타입이 아닌경우 숫자로 변환을 하기 떄문에<code>+true = 1</code>이 된다.또한
 !는 논리 연산자이며 "Lydia"를 Boolean값은 Truthy로 변환한 후 이의 반대 값을 반환하기 때문에 <code>Falsy</code>를 반환한다.
 
@@ -49,10 +50,10 @@
 
 # Boolean
 
-## True인 값
+## Truthy
 
 0이 아닌 수, 문자열, true, 객체, 배열
 
-## False인 값
+## Falsy
 
 null, undefined, 0(number), ''(string), false, NaN
