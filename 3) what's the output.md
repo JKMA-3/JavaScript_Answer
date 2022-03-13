@@ -38,12 +38,11 @@ console.log(shape.perimeter());
 function(){
   console.dir(this);
 }
-foo() // window
-
 function zoo(){
   'strict mode';
   console.log(this);
 }
+foo(); //window
 zoo(); //undefined
 ```
 
