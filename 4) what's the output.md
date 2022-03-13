@@ -11,7 +11,7 @@
 
 # 요약
 +는 단항 연산자로 피연산자가 숫자 타입이 아닌경우 숫자로 변환을 하기 떄문에<code>+true = 1</code>이 된다.또한
-!는 논리 연산자이며 "Lydia"를 Boolean값은 True로 변환한 후 이의 반대 값을 반환하기 때문에 <code>False</code>를 반환한다.
+!는 논리 연산자이며 "Lydia"를 Boolean값은 Truthy로 변환한 후 이의 반대 값을 반환하기 때문에 <code>Falsㅛ</code>를 반환한다.
 
 # 연산자
 
