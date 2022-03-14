@@ -20,7 +20,7 @@ const mouse = {
 
 1. <code>mouse.bird.size</code>is not valid<br>
    자바스크립트 엔진은 mouse.bird를 먼저 평가한다. 하지만 mouse란 객체에는 bird라는 키는 없기 때문에 undefined가 반환한 후 undefined.bird를 탐색하기 때문<code>Cannot read properties of undefined (reading 'size')</code>를 발생한다.<br/>
-   mouse.bird = undefined  ->  undefined.size = Error 발생
+   <code>mouse.bird = undefined  ->  undefined.size = Error 발생</code>
 
 # 프로퍼티 접근 방법
 
