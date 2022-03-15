@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # 5. Which one is true
+=======
+# 4. Which one is true
+>>>>>>> origin/main
 
 ```javascript
 const bird = {
