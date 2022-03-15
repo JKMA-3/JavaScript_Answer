@@ -1,4 +1,4 @@
-# 4. What is output
+# 4. Which one is true
 
 ```javascript
 const bird = {
