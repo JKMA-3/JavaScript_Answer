@@ -23,6 +23,9 @@ console.log(freddie.colorChange("orange"));
 
 # 요약
 
+4. <code>Type Error</code>
+   colorChange 메서드는 static으로 생성한 정적 메서드이기 때문에 freddie(객체)로 호출하는 것이 아닌 Chameleon(클래스)로 호출해야 하기 때문에 객체로 호출한 지금은 Type Error가 출력된다.
+
 # Prototype
 
 ## 필요한 이유
@@ -75,6 +78,6 @@ console.log(freddie.colorChange("orange"));
   이 후 객체 생성 시 프로토타입은 객체의 내부 슬롯([[prototype]])에 할당</code>
   <br><br>
 
-# Class
+# 정적 메서드와 프로토타입 메서드의 차이
 
-# Static
+정적 메서드는 클래스로 호출하며 객체의 프로퍼티를 참조 불가능하지만 프로토타입 메서드는 객체로 호출하며 객체의 프로퍼티를 참조 가능하다.
