@@ -1,4 +1,4 @@
-# 10. What happens when we do this?
+# 12. What happens when we do this?
 
 ```javascript
 function Person(firstName, lastName) {
