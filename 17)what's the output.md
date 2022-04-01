@@ -19,7 +19,7 @@ getPersonInfo`${person} is ${age} years old`;
 
 # 요약
 
-2. 2. ["", " is ", " years old"] "Lydia" 21
+2. 2. ["", " is ", " years old"] "Lydia" 21<br>
 태그 탬플릿 리터럴을 사용하여 함수에 파싱하였기 떄문에 "one"에는 문자열 값이 배열로 저장되기에 ["", " is ", " years old"], two와 three는 표현식이 저장되기에 two = "Lydia" three = 21이 저장된다.
 
 # 탬플릿 리터럴
