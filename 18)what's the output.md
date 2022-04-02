@@ -1,4 +1,4 @@
-# 16. What's the output
+# 18. What's the output
 
 ```javascript
 function checkAge(data) {
